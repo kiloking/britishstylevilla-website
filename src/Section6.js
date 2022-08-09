@@ -33,7 +33,7 @@ function Section6() {
             </Slider>
         </div>
       </div>
-      <div className='flex flex:col jc:center w:80% mx:auto pt:10% rel z:1 pt:10%@lg w:20%@lg w:50%@sm'>
+      <div className='flex flex:col jc:center w:80% mx:auto pt:10% rel z:1 pt:5%@sm w:20%@lg w:50%@sm'>
         <div className='w:full center mb:20' 
           data-aos="fade" data-aos-duration="1500" >
             <img src={process.env.PUBLIC_URL+'/images/section6/section6_title.png'} alt="" className='w:70% mx:auto mb:20'/> 

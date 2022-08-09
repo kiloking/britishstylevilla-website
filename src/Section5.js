@@ -2,9 +2,20 @@ import React from 'react'
 function Section5() {
 
   return (
-    <div className='min-h:100vh bg:white bg:center bg:no-repeat bg:cover   bg:scroll@lg'
-    style={{backgroundImage: `url(${process.env.PUBLIC_URL +'/images/section5/section5_bg.png'})`}}
+    <div className='min-h:100vh bg:white rel'
+   
     >
+      <div
+        className='inset:0 abs  bg:center bg:no-repeat bg:cover  bg:scroll@lg z:0  hidden@lg'
+        style={{backgroundImage: `url(${process.env.PUBLIC_URL +'/images/section5/section5_bg.png'})`}}
+        data-aos="fade" data-aos-duration="1500"
+      ></div>
+      <div
+        className='inset:0 abs  bg:center bg:no-repeat bg:cover bg:scroll@lg z:0  hidden block@lg'
+        style={{backgroundImage: `url(${process.env.PUBLIC_URL +'/images/section5/section5_bg2.jpg'})`}}
+        data-aos="fade" data-aos-duration="1500"
+      ></div>
+      
       <div className='flex flex:col jc:center w:80% mx:auto pt:15% rel z:1 pt:10%@lg w:20%@lg w:50%@sm'>
         <div className='w:full center mb:20' 
           data-aos="fade" data-aos-duration="1500" >

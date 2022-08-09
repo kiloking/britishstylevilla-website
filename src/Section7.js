@@ -50,7 +50,7 @@ function Section7() {
 
           <div className='w:2 h:20 bg:white mx:auto mt:20'></div>
           <div className='flex gap:10 jc:center w:90% mx:auto mt:20 w:60%@sm'>
-            <a href="https://www.facebook.com/profile.php?id=100083270795919" target="_blank" rel="noreferrer" title="link-fb" className='link-fb'>
+            <a href="https://www.facebook.com/treasuredevelopments/" target="_blank" rel="noreferrer" title="link-fb" className='link-fb'>
               <img src={process.env.PUBLIC_URL+'/images/section7/fb.png'} alt="" className='w:full'/> 
             </a>
             <a href="tel:034986766" target="_blank" rel="noreferrer" title="link-tel" className='link-tel'>
@@ -64,8 +64,8 @@ function Section7() {
 
         </div>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="rel w:100% mx:auto my:30 w:40%@lg w:40%@sm">
-        <img src={process.env.PUBLIC_URL+'/images/section7/section7_line.png'} alt="" className='w:50% abs top:-30 z:-1'/> 
+        <form onSubmit={handleSubmit(onSubmit)} className="rel w:100% mx:auto my:30 w:60%@lg w:60%@sm">
+        <img src={process.env.PUBLIC_URL+'/images/section7/section7_line.png'} alt="" className='w:50% abs top:-30 z:-1 hidden@sm'/> 
           <div className='w:full flex ai:center my:10 jc:end flex:col@sm ai:start@sm '>
             <label htmlFor="" className='f:#0667A2 f:bold mr:5 t:13'>姓名/</label>
             <input type="text" className="block  bg:white ml:3 r:5  w:full@sm

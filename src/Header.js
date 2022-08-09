@@ -10,7 +10,7 @@ function Header() {
       ></div>
       <div
         className='inset:0 abs  bg:center bg:no-repeat bg:cover bg:scroll@lg z:1  hidden block@lg'
-        style={{backgroundImage: `url(${process.env.PUBLIC_URL +'/images/header_bg.jpg'})`}}
+        style={{backgroundImage: `url(${process.env.PUBLIC_URL +'/images/header_bg2.jpg'})`}}
         data-aos="fade" data-aos-duration="1500"
       ></div>
       <div className='flex flex:col jc:center w:100% mx:auto pt:90 rel z:1 abs@lg w:35%@lg pt:0%@lg top:0@lg bottom:0@lg left:10%@lg' >

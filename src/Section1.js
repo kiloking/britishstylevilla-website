@@ -21,22 +21,11 @@ function Section1() {
         <div className='w:full center mb:20' 
           data-aos="fade" data-aos-duration="1500" >
             <img src={process.env.PUBLIC_URL+'/images/section1/section1_title1.png'} alt="" className='w:full'/> 
+            <img src={process.env.PUBLIC_URL+'/images/section1/section1_img1.png'} alt="" className='w:full mt:20'/> 
         </div>
-        <div className='w:full center mb:20  w:1/2@lg'>
-            <Slider {...settings} >
-              {
-                fakeData.map((item,index)=>{
-                  return(
-                    <div key={index} className='rel w:full '>
-                        <img src={process.env.PUBLIC_URL +'/images/section1/'+item} alt="" className='w:full'/>
-                    </div>
-                  )
-                })
-              }
-            </Slider>
-        </div>
+
       </div>
-      <div className='flex ai:flex-end jc:space-between ml:10%' data-aos="fade" data-aos-duration="1000">
+      <div className='flex ai:flex-end jc:space-between ml:10%  w:20%@lg w:50%@sm mx:auto@sm' data-aos="fade" data-aos-duration="1000">
         <div>
           <img src={process.env.PUBLIC_URL+'/images/section1/section1_text1.png'} alt="" className='w:full'/> 
         </div>
@@ -51,22 +40,11 @@ function Section1() {
         <div className='w:full center mb:20' 
           data-aos="fade" data-aos-duration="1500" >
             <img src={process.env.PUBLIC_URL+'/images/section1/section1_title2.png'} alt="" className='w:full'/> 
+            <img src={process.env.PUBLIC_URL+'/images/section1/section1_img2.png'} alt="" className='w:full mt:20'/> 
         </div>
-        <div className='w:full center mb:20  w:1/2@lg'>
-            <Slider {...settings} >
-              {
-                fakeData.map((item,index)=>{
-                  return(
-                    <div key={index} className='rel w:full '>
-                        <img src={process.env.PUBLIC_URL +'/images/section1/'+item} alt="" className='w:full'/>
-                    </div>
-                  )
-                })
-              }
-            </Slider>
-        </div>
+
       </div>
-      <div className='flex ai:flex-end jc:space-between ml:10%' data-aos="fade" data-aos-duration="1000">
+      <div className='flex ai:flex-end jc:space-between ml:10% w:20%@lg w:50%@sm mx:auto@sm' data-aos="fade" data-aos-duration="1000">
         <div>
           <img src={process.env.PUBLIC_URL+'/images/section1/section1_text2.png'} alt="" className='w:full'/> 
         </div>
