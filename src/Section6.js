@@ -1,6 +1,6 @@
 import React from 'react'
 import Slider from "react-slick";
-import {SamplePrevArrow, SampleNextArrow,fakeData} from './Helper/helper'
+import {SamplePrevArrow, SampleNextArrow} from './Helper/helper'
 function Section6() {
   const data = ['p01.jpg','p02.jpg','p03.jpg','p04.jpg','p05.jpg','p06.jpg']
   const settings = {

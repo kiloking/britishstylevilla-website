@@ -1,19 +1,6 @@
 import React from 'react'
-import Slider from "react-slick";
-import {SamplePrevArrow, SampleNextArrow,fakeData} from './Helper/helper'
 function Section1() {
-  const data = ['p01.jpg','p02.jpg','p03.jpg','p04.jpg','p05.jpg','p06.jpg']
-  const settings = {
-    dots: false,
-    lazyLoad: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <SamplePrevArrow />,
-    nextArrow: <SampleNextArrow />
-  };
+
   return (
     <div className='min-h:100vh rel bg:white bg:center bg:no-repeat bg:cover  bg:scroll@lg pb:10%'
     >
