@@ -38,7 +38,7 @@ function Section2() {
             </Slider>
         </div>
       </div>
-      <div  className='min-h:60vh rel'> 
+      <div  className='min-h:60vh rel  bg:#deb968'> 
         <div
           className='inset:0 abs  bg:center bg:no-repeat bg:cover  bg:scroll@lg z:0  hidden@lg'
           style={{backgroundImage: `url(${process.env.PUBLIC_URL +'/images/section2/section2_bg.png'})`}}

@@ -15,7 +15,7 @@ function Section6() {
     nextArrow: <SampleNextArrow />
   };
   return (
-    <div className='min-h:100vh bg:white bg:center bg:no-repeat bg:cover   bg:scroll@lg'
+    <div className='min-h:100vh bg:#b8b8b8 bg:center bg:no-repeat bg:cover   bg:scroll@lg'
     style={{backgroundImage: `url(${process.env.PUBLIC_URL +'/images/section6/section6_bg.png'})`}}
     >
       <div className='pt:10%' data-aos="fade" data-aos-duration="1000">

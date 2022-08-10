@@ -2,7 +2,7 @@ import React from 'react'
 function Section5() {
 
   return (
-    <div className='min-h:100vh bg:#0667A2 rel'
+    <div className='min-h:100vh bg:#deb968 rel'
    
     >
       <div

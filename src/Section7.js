@@ -32,7 +32,7 @@ function Section7() {
     })
   };
   return (
-    <div className='min-h:100vh bg:white bg:center bg:no-repeat bg:cover   bg:scroll@lg'
+    <div className='min-h:100vh bg:#0667A2 bg:center bg:no-repeat bg:cover   bg:scroll@lg'
     style={{backgroundImage: `url(${process.env.PUBLIC_URL +'/images/section7/section7_bg.png'})`}}
     >
     {formStatus && <div className={'fixed w:full  z:40 inset:0 transition '} onClick={()=>setFormStatus(false)}>

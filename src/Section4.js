@@ -15,7 +15,7 @@ function Section4() {
     nextArrow: <SampleNextArrow />
   };
   return (
-    <div className='min-h:100vh bg:white rel'>
+    <div className='min-h:100vh bg:#0667A2  rel'>
       <div
         className='inset:0 abs  bg:center bg:no-repeat bg:cover  bg:scroll@lg z:0  hidden@lg'
         style={{backgroundImage: `url(${process.env.PUBLIC_URL +'/images/section4/section4_bg.png'})`}}
