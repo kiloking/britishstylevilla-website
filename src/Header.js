@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
   return (
-    <div id="header" className='h:100vh rel bg:black  ' >
+    <div id="header" className='h:100vh rel bg:white  ' >
       <div
         className='inset:0 abs  bg:center bg:no-repeat bg:cover  bg:scroll@lg z:1  hidden@lg'
         style={{backgroundImage: `url(${process.env.PUBLIC_URL +'/images/header_bg.png'})`}}
