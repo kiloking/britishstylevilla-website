@@ -32,7 +32,7 @@ function Section3() {
           data-aos="fade" data-aos-duration="1500" >
             <img src={process.env.PUBLIC_URL+'/images/section3/section3_subtitle.png'} alt="" className='w:full'/> 
             <div className='flex jc:center pt:10%'>
-              <img src={process.env.PUBLIC_URL+'/images/section3/section3_text.png'} alt="" className=''  data-aos="fade" data-aos-duration="1000" data-aos-delay="500"/> 
+              <img src={process.env.PUBLIC_URL+'/images/section3/section3_text.png'} alt="" className=''  data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500"/> 
             </div>
         </div>
 

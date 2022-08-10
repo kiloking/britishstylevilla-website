@@ -22,6 +22,7 @@ function Header() {
         data-aos="fade" data-aos-duration="1500" data-aos-delay="1500">
           <img src={process.env.PUBLIC_URL+'/images/header_title.png'} alt="" className='w:full'/>
         </div>
+        
        
 
       </div>

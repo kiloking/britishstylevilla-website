@@ -23,7 +23,7 @@ function Section5() {
             <img src={process.env.PUBLIC_URL+'/images/section5/section5_subtitle.png'} alt="" className='w:full'/> 
             <div className='w:full mt:10% rel'>
               <img src={process.env.PUBLIC_URL+'/images/section5/section5_block.png'} alt="" className=''  data-aos="fade" data-aos-duration="1000" data-aos-delay="900"/> 
-              <img src={process.env.PUBLIC_URL+'/images/section5/section5_text.png'} alt="" className='abs right:0 top:0'  data-aos="fade" data-aos-duration="1500" data-aos-delay="1200"/> 
+              <img src={process.env.PUBLIC_URL+'/images/section5/section5_text.png'} alt="" className='abs right:0 top:0'  data-aos="fade-down" data-aos-duration="1500" data-aos-delay="1200"/> 
             </div>
         </div>
 

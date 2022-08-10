@@ -54,7 +54,7 @@ function Section2() {
           >
             <img src={process.env.PUBLIC_URL+'/images/section2/section2_subtitle.png'} alt="" className='w:full'  data-aos="fade" data-aos-duration="1000"/> 
             <div className='flex jc:flex-end pt:10%'>
-              <img src={process.env.PUBLIC_URL+'/images/section2/section2_text.png'} alt="" className=''  data-aos="fade" data-aos-duration="1000" data-aos-delay="500"/> 
+              <img src={process.env.PUBLIC_URL+'/images/section2/section2_text.png'} alt="" className=''  data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500"/> 
             </div>
 
             

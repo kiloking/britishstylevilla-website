@@ -50,13 +50,13 @@ function Section7() {
 
           <div className='w:2 h:20 bg:white mx:auto mt:20'></div>
           <div className='flex gap:10 jc:center w:90% mx:auto mt:20 w:60%@sm'>
-            <a href="https://www.facebook.com/treasuredevelopments/" target="_blank" rel="noreferrer" title="link-fb" className='link-fb'>
+            <a href="https://www.facebook.com/treasuredevelopments/" target="_blank" rel="noreferrer" title="link-fb" className='link-fb' data-aos="fade" data-aos-duration="1500">
               <img src={process.env.PUBLIC_URL+'/images/section7/fb.png'} alt="" className='w:full'/> 
             </a>
-            <a href="tel:034986766" target="_blank" rel="noreferrer" title="link-tel" className='link-tel'>
+            <a href="tel:034986766" target="_blank" rel="noreferrer" title="link-tel" className='link-tel' data-aos="fade" data-aos-duration="1500" data-aos-delay="500">
               <img src={process.env.PUBLIC_URL+'/images/section7/tel.png'} alt="" className='w:full' /> 
             </a>
-            <a href="https://goo.gl/maps/naQagjYP4K4obbzRA" target="_blank" rel="noreferrer" title="link-map" className='link-map'>
+            <a href="https://goo.gl/maps/naQagjYP4K4obbzRA" target="_blank" rel="noreferrer" title="link-map" className='link-map' data-aos="fade" data-aos-duration="1500" data-aos-delay="1000">
               <img src={process.env.PUBLIC_URL+'/images/section7/map.png'} alt="" className='w:full'/> 
             </a>
           </div>
