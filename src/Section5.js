@@ -2,7 +2,7 @@ import React from 'react'
 function Section5() {
 
   return (
-    <div className='min-h:100vh bg:#deb968 rel'>
+    <div className='min-h:100vh bg:#003B8C rel'>
       <div
         className='inset:0 abs  bg:center bg:no-repeat bg:cover  bg:scroll@lg z:0  hidden@lg'
         style={{backgroundImage: `url(${process.env.PUBLIC_URL +'/images/section5/section5_bg.png'})`}}
