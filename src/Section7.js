@@ -69,25 +69,25 @@ function Section7() {
         <img src={process.env.PUBLIC_URL+'/images/section7/section7_line.png'} alt="" className='w-[50%] absolute -top-10 -z-10 sm:hidden'/> 
           <div className='w-full flex items-center my-5 justify-end sm:flex-col sm:items-start '>
             <label htmlFor="" className='text-[#0667A2] font-bold mr-5 text-base md:mb-2'>姓名/</label>
-            <input type="text" className="blockbg-white ml-3 md:ml-0 rounded-sm  md:w-full
-                px-3 py-3 " placeholder="姓名"    {...register("name", { required: true})}/>
+            <input type="text" className="blockbg-white ml-3 md:ml-0 rounded-md md:w-full
+                px-3 py-2 " placeholder="姓名"    {...register("name", { required: true})}/>
           </div>
           <div className='w-full flex items-center my-5 justify-end sm:flex-col sm:items-start '>
             <label htmlFor="" className='text-[#0667A2] font-bold mr-5 text-base md:mb-2'>電話/</label>
-            <input type="text" className="blockbg-white ml-3 md:ml-0 rounded-sm  md:w-full
-                px-3 py-3" placeholder="電話"    {...register("tel", { required: true})}/>
+            <input type="text" className="blockbg-white ml-3 md:ml-0 rounded-md  md:w-full
+                px-3 py-2" placeholder="電話"    {...register("tel", { required: true})}/>
           </div>
           <div className='w-full flex items-center my-5 justify-end sm:flex-col sm:items-start '>
             <label htmlFor="" className='text-[#0667A2] font-bold mr-5 text-base md:mb-2'>居住區域/</label>
-            <input type="text" className="blockbg-white ml-3 md:ml-0 rounded-sm  md:w-full
-                px-3 py-3 " placeholder="居住區域"    {...register("place", { required: true})}/>
+            <input type="text" className="blockbg-white ml-3 md:ml-0 rounded-md  md:w-full
+                px-3 py-2 " placeholder="居住區域"    {...register("place", { required: true})}/>
           </div>
           <div className='w-full flex items-center my-5 justify-end sm:flex-col sm:items-start '>
             <label htmlFor="" className='text-[#0667A2] font-bold mr-5 text-base md:mb-2'>預約訊息/</label>
-            <input type="text" className="blockbg-white ml-3 md:ml-0 rounded-sm  md:w-full
-                px-3 py-3 " placeholder="預約訊息"    {...register("msg")}/>
+            <input type="text" className="blockbg-white ml-3 md:ml-0 rounded-md  md:w-full
+                px-3 py-2 " placeholder="預約訊息"    {...register("msg")}/>
           </div>
-          <button className='bg-[#0667A2] px-4 py-6  rounded-sm font-bold w-full text-sm text-white' type='submit'>送出表單</button>
+          <button className='bg-[#0667A2] px-4 py-6  rounded-md font-bold w-full text-sm text-white' type='submit'>送出表單</button>
         </form>
 
         
