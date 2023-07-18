@@ -1,9 +1,13 @@
-import React, { useState } from 'react'
+import React,{useState,useRef} from 'react'
 import { useForm, reset } from "react-hook-form";
 import axios from 'axios';
 import { MdClear } from "react-icons/md";
+import emailjs from '@emailjs/browser';
 function Section7() {
-  const { register, handleSubmit } = useForm({
+  const service_id = process.env.REACT_APP_YOUR_SERVICE_ID
+  const template_id = process.env.REACT_APP_YOUR_TEMPLATE_ID
+  const public_id = process.env.REACT_APP_YOUR_PUBLIC_KEY
+  const { register, handleSubmit, formState:{ errors },reset } = useForm({
     defaultValues: {
       name: "",
       tel: "",
@@ -11,6 +15,7 @@ function Section7() {
     }
   });
   const [formStatus , setFormStatus] = useState(false)
+  const [isSubmitting ,setIsSubmitting]= useState(false)
   const sendFormStatusModal = ()=>{
     setFormStatus(true)
 
@@ -18,6 +23,27 @@ function Section7() {
       setFormStatus(false)
     },5000)
   }
+  const form = useRef();
+  const sendEmail = (e) => {
+    // e.preventDefault();
+    // console.log(form.current)
+    if (isSubmitting) {
+      return;
+    }
+    setIsSubmitting(true);
+    emailjs.sendForm(service_id, template_id, form.current, public_id)
+      .then((result) => {
+          console.log(result.text);
+          if(result.text === 'OK'){
+            sendFormStatusModal()
+            reset()
+          }
+          setIsSubmitting(false);
+      }, (error) => {
+          console.log(error.text);
+          setIsSubmitting(false);
+      });
+  };
   //Main: https://sheet.best/api/sheets/b6059729-a36d-40c1-8fcb-8e8f75e4fdd7
   //TEST: https://sheet.best/api/sheets/c045db18-f183-40d4-8e7f-ac7f53cb603f
   //https://sheet.best/api/sheets/63ce9bb5-7af0-4e09-99aa-22511e62f631
@@ -65,7 +91,7 @@ function Section7() {
 
         </div>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="relative w-full mx-auto mt-5 mb-16 lg:w-[100%] ">
+        <form onSubmit={handleSubmit(sendEmail)} className="relative w-full mx-auto mt-5 mb-16 lg:w-[100%] " ref={form}>
         <img src={process.env.PUBLIC_URL+'/images/section7/section7_line.png'} alt="" className='w-[50%] absolute -top-10 -z-10 sm:hidden'/> 
           <div className='w-full flex items-center my-5 justify-end sm:flex-col sm:items-start '>
             <label htmlFor="" className='text-[#0667A2] font-bold mr-5 text-base md:mb-2'>姓名/</label>
@@ -87,7 +113,7 @@ function Section7() {
             <input type="text" className="blockbg-white ml-3 md:ml-0 rounded-md  md:w-full
                 px-3 py-2 " placeholder="預約訊息"    {...register("msg")}/>
           </div>
-          <button className='bg-[#0667A2] px-4 py-6  rounded-md font-bold w-full text-sm text-white' type='submit'>送出表單</button>
+          <button className='bg-[#0667A2] px-4 py-6  rounded-md font-bold w-full text-sm text-white' type='submit' disabled={isSubmitting}>送出表單</button>
         </form>
 
         
